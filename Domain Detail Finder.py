@@ -1,0 +1,12 @@
+import socket 
+
+def whois_lookup(domain: str):
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect(("whois.iana.org", 43))
+    s.send(f"{domain}\r\n".encode())
+    response = s.recv(1024).decode()
+    s.close()
+    return response
+
+domain = input("Enter the domain name: ")
+print(whois_lookup(domain))
