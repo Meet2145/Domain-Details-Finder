@@ -1,10 +1,20 @@
-This Python script enables you to perform a WHOIS lookup for any specified domain using socket programming. The script establishes a connection to the WHOIS server (whois.iana.org), sends the domain name for which you want to retrieve information, and then receives and displays the corresponding WHOIS data.
 
-To use the script:
+# WHOIS Lookup Script/Domain-Details-Finder
 
-Run the script in your Python environment.
-When prompted, enter the domain name you want to look up (e.g., example.com).
-The script will connect to the WHOIS server, send the domain name, and retrieve the WHOIS information.
-The retrieved WHOIS data, which includes details such as the domain's registry information, will be displayed on the screen.
+## Overview
 
-This tool is useful for gathering domain registration information quickly and programmatically without relying on third-party services.
+This Python script performs a WHOIS lookup for any specified domain using socket programming. It connects to the WHOIS server (whois.iana.org), sends the domain name, and retrieves the WHOIS data.
+
+## Features
+
+- **Domain Lookup**: Retrieve WHOIS information for any domain.
+- **Socket Programming**: Uses Python's socket library to connect to the WHOIS server.
+
+## Example
+
+Run the script and enter the domain name when prompted:
+```bash
+python whois_lookup.py
+Enter domain name: example.com
+WHOIS data for example.com:
+[WHOIS information here]
